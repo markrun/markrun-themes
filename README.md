@@ -26,3 +26,18 @@
 </body>
 </html>
 ```
+**Use in the markrun:**
+```js
+markrun(content, {
+    template: require('markrun-themes').vue()
+})
+
+markrun(content, {
+    template: require('markrun-themes').vue({
+    	header: 'html',
+	sidebar； 'html',
+	head: '<script></script> <link /> <style></style>',
+	body: '<script></script> <link /> <style></style>'
+    })
+})
+```
