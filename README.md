@@ -21,6 +21,7 @@
 	</div>
 	<div class="markdown-sidebar" id="markrun-sidebar"></div>
 	<div class="markdown-body" ><%- content %></div>
+	<div class="markdown-footer" ></div>
 	<script src="https://unpkg.com/markrun-sidebar@latest/markrun-sidebar.js"></script>
 </body>
 </html>
