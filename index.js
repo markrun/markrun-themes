@@ -37,7 +37,7 @@ var themes = {
             '        content: document.getElementById("markrun-body")',
             '    })',
             '    if (document.getElementsByTagName("h1")[0]) {',
-            '        document.getElementById("markrunCurrentPageTitle").innerHTML = document.getElementsByTagName('h1')[0].innerHTML',
+            '        document.getElementById("markrunCurrentPageTitle").innerHTML = document.getElementsByTagName("h1")[0].innerHTML',
             '    }',
             '    </script>',
             '</body>',
