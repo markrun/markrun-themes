@@ -46,4 +46,3 @@ var themes = {
     }
 }
 module.exports = themes
-export default themes
