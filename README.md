@@ -14,18 +14,18 @@
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/markrun-themes@latest/vue.css" />
 </head>
 <body>
-	<div class="markdown-header">
+    <div class="markdown-header">
         <!-- header -->
-	</div>
-	<div class="markdown-sidebar" id="markrun-sidebar">
+    </div>
+    <div class="markdown-sidebar" id="markrun-sidebar">
         <!-- sidebar -->
-	</div>
+    </div>
     <div class="markdown-content">
-	    <div class="markdown-body" id="markrun-body" >
+        <div class="markdown-body" id="markrun-body" >
             <%- content %>
         </div>
     </div>
-	<div class="markdown-footer" ><!-- footer --></div>
+    <div class="markdown-footer" ><!-- footer --></div>
     <script src="https://unpkg.com/markrun-sidebar@latest/markrun-sidebar.js"></script>
     <script>
     markrunSidebar({
@@ -51,7 +51,7 @@ markrun(content, {
             '</a>',
     		'<ul class="markdown-header-nav" >',
             '    <li>',
-            '        <a href="/doc/README.md" class="markdown-header-nav-link  markdown-header-nav-link--on">文档</a>',
+            '        <a href="/doc/README.md" class="markdown-header-nav-link">文档</a>',
             '    </li>',
             '    <li>',
             '        <a href="/example/README.md" class="markdown-header-nav-link">示例</a>',
