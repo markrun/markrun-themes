@@ -306,22 +306,3 @@ html .markdown-header-nav-link--on {
 html .markdown-sidebar-link--on {
     color: #42b983;
 }
-/* - - - - - - - - - - - - - - - - */
-/* TODO:// Reward media mobile */
-@media screen and (max-width: 600px) {
-  .markdown-sidebar {
-      position: static;
-      width: 100%;
-  }
-  .markdown-header {
-      padding-left: 1em;
-      padding-right: 1em;
-  }
-  .markdown-content {
-      padding-left: 0;
-  }
-  .markdown-body {
-      box-sizing: border-box;
-      width: 100%;
-  }
-}
