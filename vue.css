@@ -115,6 +115,7 @@ body {
 }
 .markdown-body pre code {
 	color:#535256;
+	padding:0;
 }
 
 /* - - - - - - - - - - - - - - - - */
