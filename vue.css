@@ -120,6 +120,7 @@ body {
 
 /* - - - - - - - - - - - - - - - - */
 pre {
+	overflow-x: auto;
 	color:#535256;
 	display: block;
 	width:100%;
