@@ -113,8 +113,13 @@ body {
 	font-family: 'Roboto Mono', Monaco, courier, monospace;
 	background-color: #f8f8f8;
 }
+.markdown-body pre code {
+	color:#535256;
+}
+
 /* - - - - - - - - - - - - - - - - */
 pre {
+	color:#535256;
 	display: block;
 	width:100%;
 	box-sizing: border-box;
