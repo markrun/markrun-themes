@@ -5,12 +5,19 @@ var fs = require('fs')
 var markrun = require('markrun')
 module.exports = function (source, data, info) {
    var render = json5.parse(source)
-   var jspath = path.join(path.dirname(info.filepath), render.file)
+   render.title = render.title || ''
+   render.desc = render.desc || ''
+   render.html = render.html || ''
+   var code = ''
+   if (typeof render.file === 'string') {
+       var jspath = path.join(path.dirname(info.filepath), render.file)
+       var jscontent = fs.readFileSync(jspath).toString()
+       code = hljs.highlight('js', jscontent).value
+   }
    var desc = markrun(render.desc, {
        template: '<%- content %>'
    })
-   var jscontent = fs.readFileSync(jspath).toString()
-   var code = hljs.highlight('js', jscontent).value
+
 
    var html = '<div class="markrun-box"> \n\
        <div class="markrun-box-preview"> \n\
