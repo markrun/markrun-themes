@@ -8,11 +8,12 @@ module.exports = function (source, data, info) {
    render.title = render.title || ''
    render.desc = render.desc || ''
    render.html = render.html || ''
+   render.lang = render.lang || 'js'
    var code = ''
    if (typeof render.file === 'string') {
        var jspath = path.join(path.dirname(info.filepath), render.file)
        var jscontent = fs.readFileSync(jspath).toString()
-       code = hljs.highlight('js', jscontent).value
+       code = hljs.highlight(render.lang, jscontent).value
    }
    var desc = markrun(render.desc, {
        template: '<%- content %>'
