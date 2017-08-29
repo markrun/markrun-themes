@@ -9,6 +9,7 @@ module.exports = function (source, data, info) {
    render.desc = render.desc || ''
    render.html = render.html || ''
    render.lang = render.lang || 'js'
+   render.lang = render.open || false
    var code = ''
    if (typeof render.file === 'string') {
        var jspath = path.join(path.dirname(info.filepath), render.file)
@@ -20,7 +21,7 @@ module.exports = function (source, data, info) {
    })
 
 
-   var html = '<div class="markrun-box"> \n\
+   var html = '<div data-basic-class="markrun-box" class="markrun-box ' + render.open?"markrun-box--open":"" + '"> \n\
        <div class="markrun-box-preview"> \n\
            <div class="markrun-box-preview-node">' +
                render.html +
