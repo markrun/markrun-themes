@@ -9,7 +9,7 @@ module.exports = function (source, data, info) {
    render.desc = render.desc || ''
    render.html = render.html || ''
    render.lang = render.lang || 'js'
-   render.lang = render.open || false
+   render.open = render.open || false
    var code = ''
    if (typeof render.file === 'string') {
        var jspath = path.join(path.dirname(info.filepath), render.file)
