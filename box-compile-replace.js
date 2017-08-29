@@ -20,8 +20,11 @@ module.exports = function (source, data, info) {
        template: '<%- content %>'
    })
 
-
-   var html = '<div data-basic-class="markrun-box" class="markrun-box ' + render.open?"markrun-box--open":"" + '"> \n\
+   var statusClass = ''
+   if (render.open) {
+       statusClass = ' markrun-box--open '
+   }
+   var html = '<div data-basic-class="markrun-box" class="markrun-box ' + statusClass + '"> \n\
        <div class="markrun-box-preview"> \n\
            <div class="markrun-box-preview-node">' +
                render.html +

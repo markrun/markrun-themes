@@ -1,6 +1,6 @@
 Array.prototype.forEach.call(document.getElementsByClassName('markrun-box-toggle'), function(node){
    node.onclick = function () {
-       var className = this.parentElement.getAttribute('data-basic-class')
+       var className = this.parentElement.getAttribute('class')
         var rOnClass = /markrun\-box\-\-open/g
         if (rOnClass.test(className)) {
             className = className.replace(rOnClass, '')
