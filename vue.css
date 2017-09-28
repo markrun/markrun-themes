@@ -316,19 +316,22 @@ pre .xml .cdata {
     color: #42b983;
 }
 @media only screen and (max-width:750px){
+	body {
+		padding-top: 0;
+	}
 	.markdown-header {
 		padding: 0;
 		height: auto;
 		padding-top: .2em;
 		padding-bottom: .4em;
+		position: static;
 	}
 	.markdown-sidebar {
 		position: static;
-		padding:2em;
 		width:100%;
 		background-color: #f8f8f8;
 		border-bottom: 1px solid #eee;
-		padding:1em;
+		padding:0.5em 1em;
 	}
 	.markdown-header-nav-link--on {
 		border:none;
@@ -338,7 +341,10 @@ pre .xml .cdata {
 		margin: .5em;
 	}
 	.markdown-sidebar h3 {
-		margin: .4em;
+		margin: 0;
+	}
+	.markdown-sidebar ul {
+		padding-left: 1em;
 	}
 	.markdown-header-logo {
 		display: block;
